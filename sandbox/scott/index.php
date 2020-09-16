@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Kairos</title>
+    <title>Temperature Comverter</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -81,7 +81,7 @@
                     <form>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Degree in Farenheits">
+                            <input type="text" class="form-control" id="FarenheitTemp" placeholder="Enter Degree in Farenheits">
                             
                         </div>
                         <button type="submit" class="btn">Submit</button>
