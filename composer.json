@@ -1,0 +1,7 @@
+{
+    "name":"gsantella/proj-separate-team-blue",
+    "description":"",
+    "require": {
+       "glicer/link-checker": "dev-master"
+    }
+}
