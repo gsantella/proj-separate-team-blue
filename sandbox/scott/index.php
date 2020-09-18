@@ -1,116 +1,80 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html>
+
 <head>
-
-    <!--- basic page needs
-    ================================================== -->
     <meta charset="utf-8">
-    <title>Temperature Comverter</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Temperture Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css?h=51a3dc46be9b9f91714755d28e0cc151">
 </head>
 
-<body id="top">
-
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader" class="dots-jump">
-            <div></div>
-            <div></div>
-            <div></div>
+<body>
+    <header>
+        <div id="navbarHeader" class="collapse bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <!-- Start: h4 about --><h4 class="text-white">About</h4>
+                        <!-- End: h4 about -->
+                        <!-- Start: paragraph --><p class="text-muted">This page contains a Farenheit to Celsius Converter and a Celsius to Farenheit Converter 
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <!-- Start: h4 contact --><h4 class="text-white">Contact</h4>
+                        <!-- End: h4 contact -->
+                        <!-- Start: lists unordered -->
+                        <ul class="list-unstyled">
+                            <li><a href="https://github.com/gsantella/proj-separate-team-blue" class="text-white">Fork this Project on GitHub</a></li>      
+                        </ul>
+                        <!-- End: lists unordered -->
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-
-
-    <!-- header 
-    ================================================== -->
-    <header class="s-header">
-
-        <div class="row">
-    
-            <nav class="header-nav-wrap">
-                <ul class="header-main-nav">
-                    <li class="current"><a class="smoothscroll" href="#home" title="intro">Farenheit to Celsius</a></li>
-                    <li><a class="smoothscroll" href="#about" title="about">Celsius to Farenheit</a></li>
-                </ul>
-            </nav> <!-- end header-nav-wrap -->
-    
-            <a class="header-menu-toggle" href="#"><span>Farenheit to Celcius</span></a>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between"><a class="navbar-brand d-flex align-items-center" href="#"><i class=""></i><strong>&nbsp;</strong></a><button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
+                    aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-navicon"></i></button></div>
         </div>
+    </header>
+    
+    <main role="main">
 
-    </header> <!-- end header -->
-
-
-    <!-- home
-    ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
-
-        <div class="shadow-overlay"></div>
-
-        <div class="home-content">
-
-            <div class="row home-content__main">
-
-                <div class="home-content__left">
-                    <h1>
-                    Fahrenheit to Celsius Conversion
-                    </h1>
-
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="text" class="form-control" id="FarenheitTemp" placeholder="Enter Degree in Farenheits">
-                            
-                        </div>
-                        <button type="submit" class="btn">Submit</button>
-                    </form>
-                </div> <!-- end home-content__left-->
-
-            </div> <!-- end home-content__main -->
-        </div> <!-- end home-content -->
-
-    </section> <!-- end s-home -->
-
-            <div class="col-full ss-copyright">
-                <span>&copy; Copyright Kairos 2018</span> 
-                <span>Design by <a href="https://www.styleshout.com/">styleshout</a></span>
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+              <?php include('./celsius.php') ?>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <?php include('./farenheit.php') ?>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-        </div> <!-- end footer__bottom -->
 
-        <div class="go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top"></a>
-        </div>
-
-    </footer> <!-- end s-footer -->
-
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
+    </main>
+    <footer class="text-muted">
+        <div class="container">
+        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+<p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.4/getting-started/introduction/">getting started guide</a>.</p></div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 </body>
+
+</html>
