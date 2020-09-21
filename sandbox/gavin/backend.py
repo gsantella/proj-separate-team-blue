@@ -14,14 +14,20 @@ cors = CORS(app)
 def convertToC():
   fTemp = request.args['fTemp']
   cTemp = (int(fTemp) - 32) * 5/9
-  return "Celsius: " + str(round(cTemp,2))
+  cTemp = round(cTemp,2)
+  data = {
+  "Celsius " : cTemp
+  }
+  return json.jsonify(data)
 
 @app.route('/c')
 def convertToF():
   cTemp = request.args['cTemp']
   fTemp = (int(cTemp) * 9/5) + 32
-  return "Fahrenheit: " + str(round(fTemp,2))
-  
-  
+  fTemp =  round(fTemp,2)
+  data = {
+  "Fahrenheit " : fTemp
+  }
+  return json.jsonify(data)
 
 app.run(host='0.0.0.0', port=8080)
