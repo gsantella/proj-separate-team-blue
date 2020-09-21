@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head >
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Temperture Converter</title>
@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="assets/css/styles.min.css?h=51a3dc46be9b9f91714755d28e0cc151">
 </head>
 
-<body>
-    <header>
+<body style="background-image: url('bg.jpg');"> 
+    <header >
         <div id="navbarHeader" class="collapse bg-dark">
             <div class="container">
                 <div class="row">
@@ -20,7 +20,7 @@
                         <!-- End: h4 about -->
                         <!-- Start: paragraph --><p class="text-muted">This page contains a Farenheit to Celsius Converter and a Celsius to Farenheit Converter 
                     </div>
-                    <div class="col-sm-4 offset-md-1 py-4">
+                    <div class="col-sm-4 offset-md-1 py-4" >
                         <!-- Start: h4 contact --><h4 class="text-white">Contact</h4>
                         <!-- End: h4 contact -->
                         <!-- Start: lists unordered -->
@@ -38,9 +38,9 @@
         </div>
     </header>
     
-    <main role="main">
+    <main role="main" >
 
-      <div class="album py-5 bg-light">
+      <div class="album py-5"> 
         <div class="container">
           <div class="row">
             <div class="col-md-4">
@@ -70,8 +70,13 @@
     </main>
     <footer class="text-muted">
         <div class="container">
-        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-<p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.4/getting-started/introduction/">getting started guide</a>.</p></div>
+		<br><br><br>
+        <p style="text-color:white;">Made for Guido's Software Developement Class</p>
+		<p>This was made by project team blue<p>
+		<p>Frontend: Scott<br>
+			Middle: Caleb<br>
+			Backend/API: Gavin
+		</p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>

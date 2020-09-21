@@ -3,7 +3,8 @@
 
 <form action="insert.php" method="post" align="center">
 	<h1> Celsius <br>Converter </h1> <br>
-	<input type="text" name="year" placeholder="Enter Temperture Here..."><br><br>
+	<p>This will convert celsius to farenheit</p>
+	<input type="text" name="cTemp" placeholder="Enter Temperture Here..."><br><br>
 	
     <button type="submit" name="submit">Submit</button>
     <br>
