@@ -14,13 +14,13 @@ cors = CORS(app)
 def convertToC():
   fTemp = request.args['fTemp']
   cTemp = (int(fTemp) - 32) * 5/9
-  return "Celsius: " + str(cTemp)
+  return "Celsius: " + str(round(cTemp,2))
 
 @app.route('/c')
 def convertToF():
   cTemp = request.args['cTemp']
   fTemp = (int(cTemp) * 9/5) + 32
-  return "Fahrenheit: " + str(fTemp)
+  return "Fahrenheit: " + str(round(fTemp,2))
   
   
 
