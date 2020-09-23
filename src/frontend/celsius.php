@@ -5,17 +5,10 @@
 	    <p>This will convert celsius to farenheit</p>
 	    <input type="text" id="userCInput" value="0">
       <br><br>
+      <script src="connectAPI.js"></script>
       <button type="button" onclick="getCTemp()">Submit</button>
-      <script>
-        function getCTemp()
-        {
-        var ctemp = parseInt( document.getElementById('userCInput').value, 10 );
-        document.getElementById('ctemp').innerHTML = ctemp;
-        }
-      </script>
       <br>
       Results:
-      <script src="connectAPI.js"></script>
       <div id="celsius">
         <div id=ctemp></div>
       </div>

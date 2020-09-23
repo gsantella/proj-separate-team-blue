@@ -11,18 +11,13 @@
 	<p>This will convert farenheit to celsius</p>
 	<input type="text" id="userFInput" value="0">
   <br><br>
-	
-    <button type="button" onclick="getFTemp()">Submit</button>
-    <script>
-      function getFTemp()
-      {
-        var ftemp = parseInt( document.getElementById('userFInput').value, 10 );
-        document.getElementById('ftemp').innerHTML = ftemp;
-      }
-    </script>
+	<script src="connectAPI.js"></script>
+    <button type="button" onClick="getFTemp()">Submit</button>
     <br>
     Results:
-    <div id="ftemp"></div>
+    <div id="fahrenheit">
+      <div id="ftemp"></div>
+    </div>
 </form>
 
 </body>
