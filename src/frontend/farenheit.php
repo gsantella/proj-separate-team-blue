@@ -9,11 +9,20 @@
 <form action="insert.php" method="post" align="center">
 	<h1> Farenheit Converter </h1> <br>
 	<p>This will convert farenheit to celsius</p>
-	<input type="text" name="fTemp" placeholder="Enter Temperture Here..."><br><br>
+	<input type="text" id="userFInput" value="0">
+  <br><br>
 	
-    <button type="submit" name="submit">Submit</button>
+    <button type="button" onclick="getFTemp()">Submit</button>
+    <script>
+      function getFTemp()
+      {
+        var ftemp = parseInt( document.getElementById('userFInput').value, 10 );
+        document.getElementById('ftemp').innerHTML = ftemp;
+      }
+    </script>
     <br>
     Results:
+    <div id="ftemp"></div>
 </form>
 
 </body>
