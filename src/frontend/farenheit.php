@@ -7,8 +7,8 @@
 <body>
 
 <form action="insert.php" method="post" align="center">
-	<h1> Farenheit Converter </h1> <br>
-	<p>This will convert farenheit to celsius</p>
+	<h1> Fahrenheit Converter </h1> <br>
+	<p>This will convert fahrenheit to celsius</p>
 	<input type="text" id="userFInput" value="0">
   <br><br>
 	<script src="connectAPI.js"></script>

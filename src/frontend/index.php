@@ -18,7 +18,7 @@
                     <div class="col-sm-8 col-md-7 py-4">
                         <!-- Start: h4 about --><h4 class="text-white">About</h4>
                         <!-- End: h4 about -->
-                        <!-- Start: paragraph --><p class="text-muted">This page contains a Farenheit to Celsius Converter and a Celsius to Farenheit Converter. This was made using java script, python, and html/css</p>
+                        <!-- Start: paragraph --><p class="text-muted">This page contains a Fahrenheit to Celsius Converter and a Celsius to Farenheit Converter. This was made using java script, python, and html/css</p>
                     </div>
                     <div class="col-sm-4 offset-md-1 py-4" >
                         <!-- Start: h4 contact --><h4 class="text-white">Contact</h4>
@@ -55,7 +55,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
+              <div class="card mb-4 shadow-md">
                 <?php include('./farenheit.php') ?>
                 <div class="card-body">
                   <div class="d-flex justify-content-between align-items-center">

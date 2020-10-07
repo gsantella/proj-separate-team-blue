@@ -2,7 +2,7 @@
   <body>
     <form action="https://repl.it/@cmorningstar79/proj-separate-team-blue#src/backend/backend.py" method="post" align="center">
       <h1> Celsius <br>Converter </h1> <br>
-	    <p>This will convert celsius to farenheit</p>
+	    <p>This will convert celsius to fahrenheit</p>
 	    <input type="text" id="userCInput" value="0">
       <br><br>
       <script src="connectAPI.js"></script>
